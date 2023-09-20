@@ -76,4 +76,6 @@ func main() {
 
 	RunMapsExercice()
 
+	FunctionsDemo()
+
 }
