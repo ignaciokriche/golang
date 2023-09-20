@@ -1,4 +1,4 @@
-// run go mod init github.com/ignaciokriche/golang
+// ran go mod init github.com/ignaciokriche/golang
 
 package main
 
@@ -25,6 +25,47 @@ func main() {
 
 	PrintTypes()
 
-	// https://go.dev/tour/basics/13
+	// Constants are declared like variables, but with the const keyword.
+	// Constants cannot be declared using the := syntax.
+	const Pi = 3.1416
+	fmt.Printf("Pi is a constant of type: %T and value: %v\n", Pi, Pi)
+
+	// for:
+	// go has no while
+	sum := 0
+	n := 5
+	for n > 0 {
+		fmt.Println("n:", n)
+		sum += n
+		n--
+	}
+	fmt.Println("The sum is:", sum)
+	fmt.Println()
+
+	// forever
+	n = 1
+	for {
+		if n > 5 {
+			break // exist the for
+		}
+		fmt.Println("n:", n)
+		n++
+	}
+	fmt.Println()
+
+	// if with statement
+	if v := 3 + 5; v > 7 {
+		fmt.Printf("statement is true. v is: %v\n\n", v)
+	} else {
+		fmt.Printf("v is: %v\n\n", v)
+	}
+
+	SwitchDemo()
+
+	DeferDemo()
+
+	StructDemo()
+
+	ArraySliceDemo()
 
 }
