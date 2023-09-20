@@ -72,4 +72,8 @@ func main() {
 
 	ShowPicDemo()
 
+	MapsDemo()
+
+	RunMapsExercice()
+
 }
