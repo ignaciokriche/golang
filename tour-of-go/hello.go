@@ -70,4 +70,6 @@ func main() {
 
 	RangeDemo()
 
+	ShowPicDemo()
+
 }
