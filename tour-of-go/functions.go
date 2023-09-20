@@ -26,8 +26,6 @@ func FunctionsDemo() {
 
 	functionClosures()
 
-	fmt.Println()
-
 }
 
 func compute(fn func(float64, float64) float64) float64 {
