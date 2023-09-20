@@ -8,6 +8,8 @@ import (
 
 func SwitchDemo() {
 
+	fmt.Println("switch demo...")
+
 	// Go's switch is like the one in C, C++, Java, JavaScript, and PHP, except that Go only runs the selected case,
 	// not all the cases that follow.
 
