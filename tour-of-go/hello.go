@@ -82,4 +82,6 @@ func main() {
 
 	MethodsDemo()
 
+	InterfaceDemo()
+
 }
