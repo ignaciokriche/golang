@@ -86,4 +86,6 @@ func main() {
 
 	TypeAssertionsDemo()
 
+	StringerExercise()
+
 }
