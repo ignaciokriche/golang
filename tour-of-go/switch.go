@@ -37,16 +37,16 @@ func hourGreeting(hour int) {
 	// This construct can be a clean way to write long if-then-else chains.
 	switch {
 
-	case hour < 3:
+	case hour < 4:
 		fmt.Println("\tgood late night.")
 
-	case hour < 5:
+	case hour < 7:
 		fmt.Println("\tgood early morning.")
 
 	case hour < 12:
 		fmt.Println("\tgood morning.")
 
-	case hour < 13:
+	case hour < 15:
 		fmt.Println("\tgood afternoon.")
 
 	case hour < 18:
