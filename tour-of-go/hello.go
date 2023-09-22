@@ -84,4 +84,6 @@ func main() {
 
 	InterfaceDemo()
 
+	TypeAssertionsDemo()
+
 }

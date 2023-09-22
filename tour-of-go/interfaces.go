@@ -107,5 +107,5 @@ func nilReciever() {
 }
 
 func describe(i interface{}) {
-	fmt.Printf("type: %T\tvalue: %v\n", i, i)
+	fmt.Printf("type: %T; value: %v\n", i, i)
 }
