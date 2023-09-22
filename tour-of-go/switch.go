@@ -15,7 +15,6 @@ func SwitchDemo() {
 
 	fmt.Println("go is...")
 	switch os := runtime.GOOS; os {
-
 	case "linux":
 		fmt.Println("\trunning on Linux.")
 	case "darwin":
@@ -23,34 +22,38 @@ func SwitchDemo() {
 	default:
 		fmt.Println("\trunning on", os)
 	}
+	fmt.Println()
 
-	fmt.Println("")
+	hourGreeting(time.Now().Hour())
 
-	now := time.Now()
+	fmt.Println()
+}
+
+func hourGreeting(hour int) {
+
+	fmt.Println("A switch without a condition is the same as switch true.")
 
 	// switch without a condition is the same as switch true.
 	// This construct can be a clean way to write long if-then-else chains.
 	switch {
 
-	case now.Hour() < 3:
-		fmt.Println("good late night.")
+	case hour < 3:
+		fmt.Println("\tgood late night.")
 
-	case now.Hour() < 5:
-		fmt.Println("good early morning.")
+	case hour < 5:
+		fmt.Println("\tgood early morning.")
 
-	case now.Hour() < 12:
-		fmt.Println("good morning.")
+	case hour < 12:
+		fmt.Println("\tgood morning.")
 
-	case now.Hour() < 13:
-		fmt.Println("good afternoon.")
+	case hour < 13:
+		fmt.Println("\tgood afternoon.")
 
-	case now.Hour() < 18:
-		fmt.Println("good evening.")
+	case hour < 18:
+		fmt.Println("\tgood evening.")
 
 	default:
-		fmt.Println("good night.")
+		fmt.Println("\tgood night.")
 	}
-
-	fmt.Println()
 
 }
