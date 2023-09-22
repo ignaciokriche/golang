@@ -45,7 +45,22 @@ func InterfaceDemo() {
 
 	nilReciever()
 
-	fmt.Print("\n\n")
+	fmt.Println("The interface type that specifies zero methods is known as the empty interface.")
+	// An empty interface may hold values of any type. (Every type implements at least zero methods.)
+	// Empty interfaces are used by code that handles values of unknown type. For example, fmt.Print takes
+	// any number of arguments of type interface{}.
+	var i interface{}
+	describe(i)
+	i = nil
+	describe(i)
+
+	i = 42
+	describe(i)
+
+	i = "hello"
+	describe(i)
+
+	fmt.Println("----------------------------------------------------")
 
 }
 
@@ -91,8 +106,6 @@ func nilReciever() {
 
 }
 
-func describe(i I) {
-	fmt.Printf("(%v, %T)\n", i, i)
+func describe(i interface{}) {
+	fmt.Printf("type: %T\tvalue: %v\n", i, i)
 }
-
-// https://go.dev/tour/methods/14
