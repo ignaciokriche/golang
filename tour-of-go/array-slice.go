@@ -38,6 +38,8 @@ func ArraySliceDemo() {
 
 	appendSlice()
 
+	mutate()
+
 }
 
 func makeSlices() {
@@ -83,4 +85,43 @@ func appendSlice() {
 
 func printSlice(s []int) {
 	fmt.Printf("length: %v, capacity: %v, slice: %v\n", len(s), cap(s), s)
+}
+
+func printArray(a [4]int) {
+	fmt.Printf("length: %v, capacity: %v, slice: %v\n", len(a), cap(a), a)
+}
+
+func mutate() {
+
+	fmt.Println("mutating an array has no effect on the caller:")
+
+	a := [4]int{0, 1, 2, 4}
+	printArray(a)
+	mutateArray(a)
+	printArray(a)
+	fmt.Println()
+
+	fmt.Println("mutating a slice:")
+	s := []int{0, 1, 2, 4}
+	printSlice(s)
+	mutateSlice(s)
+	printSlice(s)
+
+	fmt.Println()
+}
+
+// DANGER: this has no effect on the caller!
+// for demo only!
+func mutateArray(a [4]int) {
+	fmt.Println("\tmutating...")
+	for i := 0; i < len(a); i++ {
+		a[i] = i * 10
+	}
+}
+
+func mutateSlice(s []int) {
+	fmt.Println("\tmutating...")
+	for i := 0; i < len(s); i++ {
+		s[i] = i * 10
+	}
 }
