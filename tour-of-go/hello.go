@@ -88,4 +88,6 @@ func main() {
 
 	StringerExercise()
 
+	ErrorsExercise()
+
 }
