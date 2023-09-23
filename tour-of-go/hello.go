@@ -90,4 +90,8 @@ func main() {
 
 	ErrorsExercise()
 
+	ReaderDemo()
+
+	ExerciseRot13Reader()
+
 }
