@@ -98,4 +98,6 @@ func main() {
 
 	GenericsDemo()
 
+	SimpleTreeExercisesDemo()
+
 }
