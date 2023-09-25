@@ -96,4 +96,6 @@ func main() {
 
 	ImageExercise()
 
+	GenericsDemo()
+
 }
