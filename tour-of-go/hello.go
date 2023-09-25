@@ -94,4 +94,6 @@ func main() {
 
 	ExerciseRot13Reader()
 
+	ImageExercise()
+
 }
