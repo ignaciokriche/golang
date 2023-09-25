@@ -22,7 +22,7 @@ func GenericsDemo() {
 }
 
 // Returns the first index of t in s, or -1 if not found.
-// Go functions can be written to work on multiple types using type parameters. The type parameters of a
+// go functions can be written to work on multiple types using type parameters. The type parameters of a
 // function appear between brackets, before the function's arguments:
 func index[T comparable](s []T, t T) int {
 	for i, v := range s {
@@ -31,4 +31,12 @@ func index[T comparable](s []T, t T) int {
 		}
 	}
 	return -1
+}
+
+// In addition to generic functions, go also supports generic types.
+// A type can be parameterized with a type parameter, which could be useful for implementing
+// generic data structures:
+type MyType[C comparable] struct {
+	X C // "X comparable" does not compile :(
+	Y []C
 }
