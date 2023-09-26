@@ -102,4 +102,6 @@ func main() {
 
 	GoroutinesDemo()
 
+	ChannelRangeCloseDemo()
+
 }
