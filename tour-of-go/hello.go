@@ -100,4 +100,6 @@ func main() {
 
 	SimpleTreeExercisesDemo()
 
+	GoroutinesDemo()
+
 }
