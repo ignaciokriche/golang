@@ -1,6 +1,6 @@
-// ran go mod init github.com/ignaciokriche/golang
+// tour of go code and exercises
 
-package main
+package main // ran go mod init github.com/ignaciokriche/golang
 
 import (
 	"fmt"
@@ -9,6 +9,8 @@ import (
 )
 
 func main() {
+
+	fmt.Println("tour of go code and exercises")
 
 	fmt.Print("\nThe time is: ", time.Now(), "\n\n")
 
@@ -107,5 +109,7 @@ func main() {
 	SelectDemo()
 
 	ExerciseEquivalentBinaryTreeDemo()
+
+	ExerciseWebCrawlerDemo()
 
 }
