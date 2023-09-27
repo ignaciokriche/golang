@@ -1,4 +1,4 @@
-// Type parameters and Type parameters
+// Type parameters
 
 package main
 
