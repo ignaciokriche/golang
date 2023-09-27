@@ -104,4 +104,8 @@ func main() {
 
 	ChannelRangeCloseDemo()
 
+	SelectDemo()
+
+	ExerciseEquivalentBinaryTreeDemo()
+
 }
