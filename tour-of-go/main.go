@@ -63,7 +63,8 @@ var actions = []action{
 	{"simple tree exercise", SimpleTreeExercisesDemo},
 	{"goroutines", GoroutinesDemo},
 	{"Fibonacci channel range close exercise", ChannelRangeCloseDemo},
-	{"Fibonacci channel select exercise", SelectDemo},
+	{"channels default select", SelectDemo},
+	{"Fibonacci channel select", FibonacciSelectChannelDemo},
 	{"equivalent einary tree exercise", ExerciseEquivalentBinaryTreeDemo},
 	{"web crawler exercise", ExerciseWebCrawlerDemo},
 }
