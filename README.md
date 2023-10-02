@@ -1,5 +1,4 @@
 # golang
-go exercises
 
 ## executing tour of go:
 1. open a terminal
