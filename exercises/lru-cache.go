@@ -1,3 +1,4 @@
+// A simple LRU cache.
 // uses a map to get and put elements in O(1) time.
 // uses a doubly linked list (as a queue) to keep track of the next element to be
 // removed when cache is full.
