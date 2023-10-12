@@ -65,7 +65,7 @@ var actions = []action{
 	{"Fibonacci channel range close exercise", ChannelRangeCloseDemo},
 	{"channels default select", SelectDemo},
 	{"Fibonacci channel select", FibonacciSelectChannelDemo},
-	{"equivalent einary tree exercise", ExerciseEquivalentBinaryTreeDemo},
+	{"equivalent binary tree exercise", ExerciseEquivalentBinaryTreeDemo},
 	{"web crawler exercise", ExerciseWebCrawlerDemo},
 }
 
